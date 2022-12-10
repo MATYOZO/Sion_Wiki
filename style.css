@@ -3,62 +3,358 @@
     padding: 0;
 }
 body{
+    overflow:auto;
     width: 100vw;
-    height: 100vh;
-    overflow: hidden;
+    height: 125vh;
     background-color: white;
     display: flex;
-}
-
-header  > h1 {
-    color: #494755;
-
+    overflow-x: hidden;
 }
 #left{
     width: 28vw;
-    height: 100vh;
+    height: 170vh;
     background-color: #737083;
-    box-shadow: 1px 0px 8px 0px rgba(66, 68, 90, 1);
+    position: relative;
+    box-shadow: 4px 0px 4px #58576e;
+
 }
 #img{
     margin-top: 30px;
     display: flex;
     justify-content: center;
+    animation: fadeIn 4s;
 }
 #img img{
-    width: 325px;
-    border-radius: 300px;
-    border: 3px solid #ea5e64;
+    width: 240px;
+    border-radius: 500px;
+    box-shadow: -6px -6px 0px #58576e, 6px 6px 0px #8a89a5;
+    border: 7px solid #ea5e64;
+    transition: all 3.5s;
+}
+#img img:hover{
+    transform: rotate(360deg);
 }
 #contact{
     width: inherit;
     background-color: #ea5e64;
+    box-shadow: 4px 0px 4px #ea5e64, 0px 0px 4px #ea5e64;
     margin-top: 50px;
+    animation: fadeIn 4s;
 }
 #contact > h1{
     margin-left: 45px;
+    color: white; 
+    text-shadow: 5px 4px 0px #6e5757;
+    font-family: "Swis721 Cn BT Condensed";
+    font-size: 45px;
+    letter-spacing: 3px;
+    font-weight: 700;
+    cursor: pointer;
+}
+#contact_content{
+    padding-left: 50px;
+    margin-top: 30px;
+    color: white; 
+    text-shadow: 4px 3px 0px #58576e;
+    font-family: "Bahnschrift";
+    font-size: 24px;
+    letter-spacing: 4px;
+    font-weight: 600;
+    display: none;
+}
+#contact_content ul{
+    text-decoration: none;
     color: white;
 }
+.zdj{
+    position: fixed;
+    top: 10vh;
+    left: 50vh;
+    z-index: 10;
+    display: none;
+    list-style: none;
+}
+.zdj img{
+    width: 1000px;
+    height: 750px;
+    border-radius: 5px;
+}
+#x{
+    top: 10vh;
+    left: 150vh;
+    position: fixed;
+    z-index: 11;
+    cursor: pointer;
+    display: none;
+}
+#skills{
+    margin-top: 35px;
+    animation: fadeIn 4s;
+    width: 29vw;
+    height: 600px;
+    box-shadow: 4px 0px 4px 0px #58576e;
+    background-color: #58576e;
+    padding: 12px 12px;
+    position: relative;
+}
+#skills p{
+    color: white;
+    font-family: "Swis721 Cn BT Condensed";
+    font-size: 45px;
+    text-shadow:  5px 4px 0px #373544;
+    letter-spacing: 3px;
+    font-weight: 700;
+    position:  absolute;
+    top:  5%;
+    left: 9%;
+}
+
+#skills ul{
+    list-style-type: none;
+    color: white;
+    font-family: "Bahnschrift";
+    font-size: 24px;
+    text-shadow:  4px 3px 0px #403e50;
+    letter-spacing: 3px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    margin-top: 17%;
+}
+#skills ul >li{
+
+    padding: 35px;
+}
+
+#ram1-ocen{
+    width: 405px;
+    height: 8px;
+    background-color: #ea5e64;
+    box-shadow: 4px 4px 4px 0px #403e50;
+    position: absolute;
+    top: 29%;
+    left: 9%;
+    
+}
+
+#ram2-ocen{
+    width: 205px;
+    height: 8px;
+    background-color: #b7b7b970;
+    box-shadow: 4px 4px 4px 0px #403e50;
+    position: absolute;
+    top: 45%;
+    right: 12%;
+}
+
+#ram3-ocen{
+    width: 205px;
+    height: 8px;
+    background-color: #ea5e64;
+    box-shadow: 4px 4px 4px 0px #403e50;
+    position: absolute;
+    top: 45%;
+    left: 9%;
+    
+}
+
+#ram4-ocen{
+    width: 100px;
+    height: 8px;
+    background-color: #ea5e64;
+    box-shadow: 4px 4px 4px 0px #403e50;
+    position: absolute;
+    top: 62%;
+    left: 9%;
+    
+}
+
+#ram5-ocen{
+    width: 305px;
+    height: 8px;
+    background-color: #b7b7b970;
+    box-shadow: 4px 4px 4px 0px #403e50;
+    position: absolute;
+    top: 77%;
+    right: 12%;
+    
+}
+
+#ram6-ocen{
+    width: 100px;
+    height: 8px;
+    background-color: #ea5e64;
+    box-shadow: 4px 4px 4px 0px #403e50;
+    position: absolute;
+    top: 77%;
+    left: 9%;
+    
+}
+
+#ram7-ocen{
+    width: 305px;
+    height: 8px;
+    background-color: #b7b7b970;
+    box-shadow: 4px 4px 4px 0px #403e50;
+    position: absolute;
+    top: 62%;
+    right: 12%;
+    
+}
+
+#ram8-ocen{
+    width: 405px;
+    height: 8px;
+    background-color: #ea5e64;
+    box-shadow: 4px 4px 4px 0px #403e50;
+    position: absolute;
+    top: 92%;
+    left: 9%;
+    
+}
+
 #right{
-    height: 100vh;
+    height: 170vh;
     width: 70vw;
     display: flex;
     flex-direction: column;
+    background-color: #b7b7b970;
 }
 #header{
     margin: 40px auto 0;
 }
+#header > h1 {
+    color: #494755;
+    font-family: "Bebas Neue";
+    font-size: 200px;
+    letter-spacing: 20px;
+    font-weight: 100;
+    text-shadow: -3px -3px 0px #ea5e64, 4px 4px 0px #8a89a5;
+    position: absolute;
+    top: 1%;
+    right: 26.7%;
+
+}
+
+.przezwisko{
+    color: #ea5e64;
+    font-family: "Bebas Neue";
+    font-size: 25px;
+    font-weight: 10;
+    letter-spacing: 5px;
+    text-shadow:  2px 2px 0px #8a89a5;
+    position: absolute;
+    right: 29%;
+    top: 24%;
+    
+}
 #biografia {
     width: 850px;
 	height: 60px;
-	background-color: #737083;
+	background-color: #58576e;
+    Box-shadow: 4px 4px 4px #58576e;
     margin: 40px auto 0;
     border-top-right-radius: 150px; 
     position: absolute;
-    top: 15%;
+    top: 30%;
     left: 35%;   
 }
+.ram1{
+    width: 120px;
+	height: 60px;
+    border-right: 15px solid #ea5e64;
+    border-top-right-radius: 100%;
+    position: absolute;
+    right: 10%;
+}
+.ram2{
+    width: 120px;
+	height: 60px;
+    border-right: 15px solid #ea5e64;
+    border-top-right-radius: 100%;
+    position: absolute;
+    right: 5%;
+}
+.text-ram{
+    color: #ea5e64;
+    font-family: "Swis721 Cn BT Condensed";
+    font-size: 40px;
+    text-shadow: -3px -2px 0px #403e50, 2px 1px 0px #8a89a5;
+    letter-spacing: 5px;
+    font-weight: 500;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+}
+.full-text{
+    Color: rgb(70, 70, 70);
+    font-family: "Bahnschrift";
+    font-size: 18px;
+    text-shadow: 2px 2px 0px #b6b5da;
+    letter-spacing: 2px;
+    font-weight: 700;
+    position: absolute;
+    top: 160%;
+    
+}
+#noxus{
+    width: 850px;
+	height: 60px;
+	background-color: #58576e;
+    Box-shadow: 4px 4px 4px #58576e;
+    margin: 40px auto 0;
+    border-top-right-radius: 150px; 
+    position: absolute;
+    top: 65%;
+    left: 35%;   
+}
+
+#opowiadanie {
+    width: 850px;
+	height: 60px;
+	background-color: #58576e;
+    Box-shadow: 4px 4px 4px #58576e;
+    margin: 40px auto 0;
+    border-top-right-radius: 150px; 
+    position: absolute;
+    top: 112%;
+    left: 35%;   
+}
+button{
+    position:absolute;
+    right: 2%;
+    color: #ea5e64;
+    font-family: "Bahnschrift";
+    font-size: 19px;
+    font-style: oblique;
+    letter-spacing: 2px;
+    font-weight: 600;
+    text-shadow:  1px 2px 0px #58576e;
+    background-color: #dfdfe0;
+    border: 0px solid #737181;
+    width: 200px;
+    height: 30px;
+    Cursor: pointer;
+}
+#more {display: none;}
+
+
+
 #right_border{
     width: 2vw;
+    height: 170vh;
+    position: absolute;
+    right: 0%;
+ 
     background-color: #ea5e64;
+    box-shadow: -4px 0px 4px  #b6b5da;
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
