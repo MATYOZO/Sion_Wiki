@@ -6,9 +6,9 @@ body{
     overflow:auto;
     width: 100vw;
     height: 125vh;
-    background-color: white;
     display: flex;
     overflow-x: hidden;
+    background-color: #b7b7b970;
 }
 #left{
     width: 28vw;
@@ -16,18 +16,17 @@ body{
     background-color: #737083;
     position: relative;
     box-shadow: 4px 0px 4px #58576e;
-
+    animation: left 2s;
 }
 #img{
     margin-top: 30px;
     display: flex;
-    justify-content: center;
-    animation: fadeIn 4s;
+    justify-content: center;**
 }
 #img img{
     width: 240px;
     border-radius: 500px;
-    box-shadow: -6px -6px 0px #58576e, 6px 6px 0px #8a89a5;
+    box-shadow: -5px -5px 0px #58576e, 5px 5px 0px #58576e;
     border: 7px solid #ea5e64;
     transition: all 3.5s;
 }
@@ -39,7 +38,6 @@ body{
     background-color: #ea5e64;
     box-shadow: 4px 0px 4px #ea5e64, 0px 0px 4px #ea5e64;
     margin-top: 50px;
-    animation: fadeIn 4s;
 }
 #contact > h1{
     margin-left: 45px;
@@ -65,31 +63,10 @@ body{
 #contact_content ul{
     text-decoration: none;
     color: white;
-}
-.zdj{
-    position: fixed;
-    top: 10vh;
-    left: 50vh;
-    z-index: 10;
-    display: none;
-    list-style: none;
-}
-.zdj img{
-    width: 1000px;
-    height: 750px;
-    border-radius: 5px;
-}
-#x{
-    top: 10vh;
-    left: 150vh;
-    position: fixed;
-    z-index: 11;
-    cursor: pointer;
-    display: none;
+    list-style-type: none;
 }
 #skills{
     margin-top: 35px;
-    animation: fadeIn 4s;
     width: 29vw;
     height: 600px;
     box-shadow: 4px 0px 4px 0px #58576e;
@@ -130,7 +107,7 @@ body{
     width: 405px;
     height: 8px;
     background-color: #ea5e64;
-    box-shadow: 4px 4px 4px 0px #403e50;
+    box-shadow: 0px 4px 4px 0px #403e50;
     position: absolute;
     top: 29%;
     left: 9%;
@@ -141,17 +118,17 @@ body{
     width: 205px;
     height: 8px;
     background-color: #b7b7b970;
-    box-shadow: 4px 4px 4px 0px #403e50;
+    box-shadow: 0px 4px 4px 0px #403e50;
     position: absolute;
     top: 45%;
-    right: 12%;
+    right: 21%;
 }
 
 #ram3-ocen{
     width: 205px;
     height: 8px;
     background-color: #ea5e64;
-    box-shadow: 4px 4px 4px 0px #403e50;
+    box-shadow: 0px 4px 4px 0px #403e50;
     position: absolute;
     top: 45%;
     left: 9%;
@@ -162,7 +139,7 @@ body{
     width: 100px;
     height: 8px;
     background-color: #ea5e64;
-    box-shadow: 4px 4px 4px 0px #403e50;
+    box-shadow: 0px 4px 4px 0px #403e50;
     position: absolute;
     top: 62%;
     left: 9%;
@@ -173,10 +150,10 @@ body{
     width: 305px;
     height: 8px;
     background-color: #b7b7b970;
-    box-shadow: 4px 4px 4px 0px #403e50;
+    box-shadow: 0px 4px 4px 0px #403e50;
     position: absolute;
     top: 77%;
-    right: 12%;
+    right: 21.5%;
     
 }
 
@@ -184,7 +161,7 @@ body{
     width: 100px;
     height: 8px;
     background-color: #ea5e64;
-    box-shadow: 4px 4px 4px 0px #403e50;
+    box-shadow: 0px 4px 4px 0px #403e50;
     position: absolute;
     top: 77%;
     left: 9%;
@@ -195,10 +172,10 @@ body{
     width: 305px;
     height: 8px;
     background-color: #b7b7b970;
-    box-shadow: 4px 4px 4px 0px #403e50;
+    box-shadow: 0px 4px 4px 0px #403e50;
     position: absolute;
     top: 62%;
-    right: 12%;
+    right: 21.5%;
     
 }
 
@@ -213,12 +190,45 @@ body{
     
 }
 
+#blok{
+    width: inherit;
+    background-color: #ea5e64;
+    box-shadow: 4px 0px 4px #ea5e64, 0px 0px 4px #ea5e64;
+    margin-top: 50px;
+}
+#blok > h1{
+    margin-left: 45px;
+    color: white; 
+    text-shadow: 5px 4px 0px #6e5757;
+    font-family: "Swis721 Cn BT Condensed";
+    font-size: 45px;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+#blok_1 {
+    padding-left: 45px;
+    margin-top: 12px;
+    color: white; 
+    text-shadow: 4px 3px 0px #58576e;
+    font-family: "Bahnschrift";
+    font-size: 22px;
+    letter-spacing: 4px;
+    font-weight: 600;
+
+}
+
+#blok_1 ul li{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    list-style-type: none;
+}
+
 #right{
     height: 170vh;
     width: 70vw;
     display: flex;
     flex-direction: column;
-    background-color: #b7b7b970;
 }
 #header{
     margin: 40px auto 0;
@@ -233,7 +243,7 @@ body{
     position: absolute;
     top: 1%;
     right: 26.7%;
-
+    animation: fadeIn2 4s;
 }
 
 .przezwisko{
@@ -246,7 +256,7 @@ body{
     position: absolute;
     right: 29%;
     top: 24%;
-    
+    animation: fadeIn2 5s;
 }
 #biografia {
     width: 850px;
@@ -257,7 +267,11 @@ body{
     border-top-right-radius: 150px; 
     position: absolute;
     top: 30%;
-    left: 35%;   
+    left: 40.5%;
+    animation: left_biografia 11s;
+}
+.full-text{
+    animation: fadeIn2 15s;
 }
 .ram1{
     width: 120px;
@@ -285,6 +299,7 @@ body{
     position: absolute;
     left: 10%;
     top: 10%;
+
 }
 .full-text{
     Color: rgb(70, 70, 70);
@@ -306,10 +321,12 @@ body{
     border-top-right-radius: 150px; 
     position: absolute;
     top: 65%;
-    left: 35%;   
+    left: 40.5%;
+    animation: left_biografia 11s;
 }
 
 #opowiadanie {
+    animation: left_biografia 11s;
     width: 850px;
 	height: 60px;
 	background-color: #58576e;
@@ -318,7 +335,7 @@ body{
     border-top-right-radius: 150px; 
     position: absolute;
     top: 112%;
-    left: 35%;   
+    left: 40.5%;   
 }
 button{
     position:absolute;
@@ -331,7 +348,7 @@ button{
     font-weight: 600;
     text-shadow:  1px 2px 0px #58576e;
     background-color: #dfdfe0;
-    border: 0px solid #737181;
+    border: 0px solid #dfdfe0;
     width: 200px;
     height: 30px;
     Cursor: pointer;
@@ -348,13 +365,74 @@ button{
  
     background-color: #ea5e64;
     box-shadow: -4px 0px 4px  #b6b5da;
+    animation: right_border 2s;
 }
-
-@keyframes fadeIn {
-    from{
+@keyframes fadeIn2 {
+    0%{
         opacity: 0;
     }
+    20%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 0;
+    }
+    60%{
+        opacity: 0;
+    }
+    80{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes right_border {
+    from{
+        transform: translateX(50px);
+    }
     to{
+        transform: translateX(0);
+    }
+}
+@keyframes left {
+    from{
+        transform: translateX(-500px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+@keyframes left_biografia {
+    0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 0;
+    }
+    40%{
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    60%{
+        opacity: 1;
+    }
+    80%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateX(0);
         opacity: 1;
     }
 }

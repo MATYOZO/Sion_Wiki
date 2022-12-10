@@ -6,9 +6,6 @@ let right = document.querySelector("#right");
 let right_border = document.querySelector("#right_border");
 let skin_napis = document.querySelector("#contact");
 let skiny_ul = document.querySelector("#contact_content");
-let skin = document.querySelectorAll(".skin");
-let zdj = document.querySelector(".zdj");
-let x = document.querySelector("#x");
 
 img.addEventListener('click', ()=>{
     audio.play();
@@ -40,18 +37,14 @@ skin_napis.addEventListener('click', ()=>{
     if(skiny_ul.style.display === "none")
     {
         skiny_ul.style.display = 'inherit';
+        left.style.height = "190vh";
+        right.style.height = "190vh";
+        right_border.style.height = "190vh";
     }
     else{
         skiny_ul.style.display = 'none';
+        left.style.height = "170vh";
+        right.style.height = "170vh";
+        right_border.style.height = "170vh";
     }
-});
-skin.forEach(skiny =>{
-    skiny.addEventListener('click', ()=>{
-        zdj.style.display = "inherit";
-        x.style.display = "inherit"
-    })
-})
-x.addEventListener('click', ()=>{
-    zdj.style.display = "none";
-    x.style.display = "none"
 });
